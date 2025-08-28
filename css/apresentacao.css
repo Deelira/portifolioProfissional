@@ -1,0 +1,40 @@
+body{
+    background-color: #ececec;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+h3{
+    color: #525252;
+}
+
+p{
+    color: #525252 ;
+}
+
+button{
+    width: 10vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 5px;
+    background-color: #ececee;
+    border-color: #525252;
+    color: #46090d;
+}
+
+
+li{
+    color: #525252;
+    text-align: left;
+}
+
+hr{
+    margin-right: 8rem;
+    margin-left: 8rem;
+    height: 0.6rem;
+    background-color: #46090d;
+    border-radius: 20px;
+}
+
+ul{
+    text-align: left;
+}

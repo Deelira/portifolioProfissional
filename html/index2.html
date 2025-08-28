@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alisson Lira - Designer e Desenvolvedor Front-end</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --text: #333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: var(--text);
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 10px;
+            margin: 30px 0 20px;
+        }
+        
+        h3 {
+            color: var(--secondary);
+            margin: 20px 0 10px;
+        }
+        
+        .tagline {
+            font-style: italic;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+        
+        .main-content {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .sidebar {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .skill-tag {
+            background: var(--light);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .highlight {
+            color: var(--accent);
+            font-weight: bold;
+        }
+        
+        .divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, var(--secondary), transparent);
+            margin: 30px 0;
+        }
+        
+        .contact-info {
+            margin-top: 20px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-info i {
+            margin-right: 10px;
+            color: var(--secondary);
+            width: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Alisson Lira</h1>
+        <p class="tagline">Designer Gráfico | Graduando em Ciência da Computação</p>
+        <p>Unindo criatividade e código para criar experiências que funcionam</p>
+    </header>
+    
+    <div class="container">
+        <div class="main-content">
+            <section id="about">
+                <h2>Sobre Mim</h2>
+                <p>Olá! Eu sou o <span class="highlight">Alisson Lira Delfino</span>.</p>
+                <p>Sou <em>designer gráfico</em> de coração e, agora, também um desenvolvedor front-end em formação!</p>
+                <p>Com <strong>10 anos de experiência</strong> criando marcas, identidades visuais e materiais que contam histórias, decidi mergulhar de cabeça no universo da programação.</p>
+                <p>Atualmente, estou cursando <strong>Ciência da Computação</strong> e me apaixonando cada vez mais pelo mundo do <strong>front-end</strong>.</p>
+                <p><strong>Minha missão é simples:</strong> <em>Criatividade + Código = Experiências que funcionam.</em></p>
+                <p>Junto meu olhar de designer com as habilidades de desenvolvimento para construir interfaces que não só impressionam, mas principalmente resolvem problemas.</p>
+            </section>
+            
+            <div class="divider"></div>
+            
+            <section id="journey">
+                <h2>De Designer a DEV: Uma Jornada de Criação</h2>
+                <p>Na estrada do <strong>design gráfico</strong> desde 2013, adquiri experiência em gráficas e no mundo freelancer, sempre com muito layout, cor e criação nas pontas dos dedos.</p>
+                <p>Hoje junto a essa bagagem, estou mergulhando no universo da <strong>programação</strong> como estudante de Ciência da Computação, com foco total em <strong>desenvolvimento front-end</strong> e na criação de <strong>experiências digitais</strong> que encantam.</p>
+                
+                <h3>Minhas ferramentas de criação:</h3>
+                <div class="skills">
+                    <span class="skill-tag">CorelDraw</span>
+                    <span class="skill-tag">Photoshop</span>
+                    <span class="skill-tag">After Effects</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">Java</span>
+                </div>
+                <p><strong>Fotografia e vídeo:</strong> Outras paixões que turbinam minha visão criativa.</p>
+            </section>
+            
+            <div class="divider"></div>
+            
+            <section id="why-work-with-me">
+                <h2>Por Que Trabalhar Comigo?</h2>
+                <p>Porque eu amo a criatividade do design e a lógica do desenvolvimento!</p>
+                
+                <h3>Visão Dupla</h3>
+                <p>Entendo tanto a estética quanto a funcionalidade de um projeto.</p>
+                
+                <h3>Adaptabilidade</h3>
+                <p>Me movo com facilidade entre diferentes linguagens, do papel ao código.</p>
+                
+                <h3>Comprometimento</h3>
+                <p>Busco sempre o melhor resultado, seja em um logo ou em uma linha de código.</p>
+            </section>
+        </div>
+        
+        <div class="sidebar">
+            <section id="hobbies">
+                <h2>Fora do Computador</h2>
+                <p>Quando não estou mergulhado em código ou design, você me encontra:</p>
+                <ul>
+                    <li><strong>Dando um trato</strong> na oficina com meu pai</li>
+                    <li><strong>Correndo atrás de uma bola</strong>, seja na quadra ou no campo de futebol</li>
+                    <li><strong>Desafiando os amigos</strong> em um bom jogo de tênis de mesa</li>
+                    <li><strong>Pegando estrada</strong> numa boa moto customizada</li>
+                </ul>
+            </section>
+            
+            <div class="divider"></div>
+            
+            <section id="contact">
+                <h2>Contato</h2>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> email@exemplo.com</p>
+                    <p><i class="fas fa-phone"></i> (XX) XXXXX-XXXX</p>
+                    <p><i class="fab fa-linkedin"></i> linkedin.com/in/seuperfil</p>
+                    <p><i class="fab fa-github"></i> github.com/seuusuario</p>
+                    <p><i class="fab fa-behance"></i> behance.net/seuperfil</p>
+                </div>
+            </section>
+            
+            <div class="divider"></div>
+            
+            <section id="education">
+                <h2>Formação</h2>
+                <p><strong>Ciência da Computação</strong></p>
+                <p>Graduando</p>
+                <p>Universidade XYZ</p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

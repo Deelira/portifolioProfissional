@@ -1,0 +1,112 @@
+body {
+    font-family: 'ITC Avant Garde Pro Md', sans-serif;
+    font-weight: 350;
+    background-image: url(/imagens/background\ body.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #192a2a;
+    margin: 0;
+}
+
+img {
+    width: 15rem;
+    margin-bottom: 0;
+}
+
+header {
+    margin: 0;
+    margin-left: -1rem;
+    background-image: url(/imagens/background\ header.png);
+    background-repeat: no-repeat;    /* Evita que a imagem repita */
+    background-size: cover;     /* Permite que a imagem cubra toda a área do header */
+    padding: 1vw;
+    color: #cecece;
+}
+
+header p {
+    margin-top: 3px;
+}
+
+main p {
+    line-height: 1.8vw;
+}
+
+h1 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+ul {
+    list-style: circle;
+    padding: 1vw;
+}
+
+li {
+    padding-bottom: 0.8vw;
+    text-align: left;
+}
+
+
+
+hr {
+    border-color: #2f4f4f;
+}
+
+strong {
+    color: #192a2a;
+}
+
+span {
+    color: #118383;
+    text-align: center;
+}
+
+footer {
+    margin-top: 2vw;
+    padding: 2vw;
+    background-color: #222f2f;
+}
+
+footer p {
+    margin: 0.6vw;
+    font-size: small;
+    color: #cecece;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+.habilidade {
+    background: #192a2a;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    color: #cecece;
+    margin-left: 2%;
+}
+
+.ferrametas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.contato {
+    display: flex;
+    color: #118383;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 10px;
+    width: 100%;
+}
+
+a {
+    color: inherit;    /* herda a cor do texto ao redor */
+    text-decoration: none;    /* remove sublinhado */
+    font-family: inherit;    /* mantém a fonte padrão da página */
+}
