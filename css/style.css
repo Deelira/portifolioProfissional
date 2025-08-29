@@ -16,37 +16,35 @@ img {
 
 header {
     margin: 0;
-    margin-left: -1rem;
+    margin-left: -1rem; /* Utilizei -1 porque a imagem estava com um espaçamento à esquerda da página */
     background-image: url(/imagens/background\ header.png);
     background-repeat: no-repeat;    
     background-size: cover;     
-    padding: 1vw; /* Utilizei a unidade de medida vw para tornar os elementos do header mais consistentes entre dispositivos. */
+    padding-bottom: 1vw; /* Utilizei a unidade de medida vw para tornar os elementos do header mais consistentes entre dispositivos. */
     color: #cecece;
 }
 
 header p {
-    margin-top: 3px;
+    margin-left: 1rem; /* Utilizado para corrigir o espaçamento, pois ao diminuir para zerar a imagem a esquerda, estava fazendo o mesmo com o texto*/
 }
 
 main p {
-    line-height: 1.8vw;
+    line-height: 1.4rem;
 }
 
 h1 {
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin: auto;
 }
 
 ul {
     list-style: circle;
-    padding: 1vw;
+    padding: 1rem;
 }
 
 li {
-    padding-bottom: 0.8vw;
     text-align: left;
+    line-height: 2rem;
 }
-
 
 
 hr {
@@ -63,14 +61,15 @@ span {
 }
 
 footer {
-    margin-top: 2vw;
-    padding: 2vw;
+    margin-top: 2rem;
+    padding: 2rem;
     background-color: #222f2f;
 }
 
 footer p {
-    margin: 0.6vw;
-    font-size: small;
+    margin: auto;
+    padding-top: 0.5rem;
+    font-size: 12px;
     color: #cecece;
 }
 
@@ -78,21 +77,36 @@ h2 {
     text-align: center;
 }
 
+.sobre-mim {
+    margin: auto;
+    width: 90%;
+}
 
 .habilidade {
     background: #192a2a;
-    padding: 5px 15px;
     border-radius: 15px;
-    font-size: 0.9rem;
     color: #cecece;
-    margin-left: 2%; /* Utilizei a unidade de medida porcentagem para melhor adaptação e flexibilidade com relação à seu elemento pai*/
+    margin: auto; 
+    padding: 0%; 
 }
 
 .ferrametas {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 24px;
+    gap: 2rem;
+    margin: auto;
+    width: 90%; /* Utilizei a unidade de medida porcentagem para melhor adaptação e flexibilidade com relação à seu elemento pai */
+    text-align: center;
+}
+
+.trabalhe-comigo {
+    margin: auto;
+    width: 90%;
+}
+
+.minha-jornada {
+    margin: auto;
+    width: 90%;
 }
 
 .contato {
@@ -100,18 +114,28 @@ h2 {
     color: #118383;
     justify-content: center;
     align-items: center;
-    gap: 24px;
-    padding: 10px;
-    width: 100%;
+    gap: 1rem;
+    margin: auto;
+    width: 90%;
+    padding-bottom: 0.5rem;
 }
 
 .hobbies {
     margin: auto;
-    width: 80%;
+    width: 90%;
+    line-height: 1.5rem;
 }
 
 a {
     color: inherit;    
     text-decoration: none;    
     font-family: inherit;    
+}
+
+@media {
+    .habilidade {
+        padding: 2rem;
+        text-align: center;
+        justify-items: center;
+    }
 }
