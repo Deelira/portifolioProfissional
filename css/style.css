@@ -20,6 +20,7 @@ header {
     background-image: url(/imagens/background\ header.png);
     background-repeat: no-repeat;    
     background-size: cover;     
+    padding-top: 1vw;
     padding-bottom: 1vw; /* Utilizei a unidade de medida vw para tornar os elementos do header mais consistentes entre dispositivos. */
     color: #cecece;
 }
